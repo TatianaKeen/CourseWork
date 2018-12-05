@@ -1,0 +1,9 @@
+ //заполнение comboBox
+            OleDbDataReader reader = myCommand.ExecuteReader();
+                while (reader.Read())
+            {
+                comboBox1.Items.Add(reader["Сумма"].ToString());
+                comboBox4.Items.Add(reader["Пользователь.Имя_пользователя"].ToString());
+                comboBox2.Items.Add(reader["Пользователь.Имя_пользователя"].ToString());
+                comboBox3.Items.Add(reader["Пользователь.Имя_пользователя"].ToString());
+            }
